@@ -67,7 +67,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/login"
+            android:text="@string/sign_up"
             android:fontFamily="@font/shojumaru"
             android:textSize="36sp"
             />
@@ -94,6 +94,16 @@
         android:inputType="numberPassword"
         android:hint="@string/password"
         android:autofillHints="@string/phone_number" />
+    <EditText
+        android:id="@+id/confirmInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="300dp"
+        android:minHeight="48dp"
+        android:layout_marginTop="12dp"
+        android:inputType="numberPassword"
+        android:hint="@string/confirm_password"
+        android:autofillHints="@string/phone_number" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -108,7 +118,7 @@
             android:paddingTop="10dp"
             android:paddingEnd="48dp"
             android:paddingBottom="10dp"
-            android:text="@string/login"
+            android:text="@string/register"
             android:textSize="30sp"
             android:minWidth="300dp"
             android:layout_alignParentBottom="true"
