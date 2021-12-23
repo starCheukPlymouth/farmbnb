@@ -2,4 +2,7 @@
     <string name="app_name">farmbnb</string>
     <string name="login">Login</string>
     <string name="farmbnb">FarmBnb</string>
+    <string name="register">Register</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
 </resources>
