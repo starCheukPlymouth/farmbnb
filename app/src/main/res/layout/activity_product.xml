@@ -24,16 +24,14 @@
         tools:ignore="MissingConstraints">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp">
+            android:layout_width="60dp"
+            android:layout_height="60dp">
 
             <ImageButton
                 android:id="@+id/backButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/logo_background"
+                android:background="@drawable/back_button"
                 android:contentDescription="@null"
                 tools:ignore="MissingConstraints" />
 
@@ -82,9 +80,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="@font/shojumaru"
-                android:textColor="@color/black"
                 android:text="xxx"
                 android:textAlignment="textEnd"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 tools:ignore="HardcodedText" />
 
