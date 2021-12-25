@@ -13,4 +13,6 @@
     <string name="catering"><u>Catering</u></string>
     <string name="detail"><u>Detail</u></string>
     <string name="book_now">Book Now</string>
+    <string name="thank_you">Thank You!</string>
+    <string name="home">Home</string>
 </resources>

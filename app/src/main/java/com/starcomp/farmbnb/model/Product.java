@@ -11,10 +11,6 @@ public class Product {
         return image;
     }
 
-    public int getPrice() {
-        return price;
-    }
-
     public String getPriceString() {
         return "$" + price;
     }

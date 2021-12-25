@@ -23,6 +23,8 @@ public class ProductActivity extends AppCompatActivity {
     private static final int BARN_INDEX = 1;
     private static final int HUT_INDEX = 2;
 
+    public static final String EXTRA_MESSAGE = "BOOK_PRODUCT";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,7 +58,9 @@ public class ProductActivity extends AppCompatActivity {
     }
 
     private void book() {
-
+        Intent intent = new Intent(this, SuccessActivity.class);
+        intent.putExtra(EXTRA_MESSAGE, product.getName());
+        startActivity(intent);
     }
 
     private void back() {
