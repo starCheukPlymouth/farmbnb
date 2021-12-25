@@ -7,4 +7,7 @@
     <string name="password">Password</string>
     <string name="sign_up">Sign up</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="farmhouse">FarmHouse</string>
+    <string name="barn">Barn</string>
+    <string name="shepherds_hut">Shepherds Hut</string>
 </resources>

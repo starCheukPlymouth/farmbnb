@@ -9,16 +9,15 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/splash_background"
+        android:contentDescription="@null"
         android:scaleType="centerCrop"
-        android:contentDescription="@null" />
+        android:src="@drawable/splash_background" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:gravity="center"
-        >
+        android:orientation="vertical">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -34,15 +33,15 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/shojumaru"
-                    android:textSize="36sp"
-                    android:text="@string/farmbnb"/>
+                    android:text="@string/farmbnb"
+                    android:textSize="36sp" />
             </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -53,27 +52,28 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
             android:fontFamily="@font/shojumaru"
+            android:minWidth="300dp"
             android:paddingStart="48dp"
             android:paddingTop="10dp"
             android:paddingEnd="48dp"
             android:paddingBottom="10dp"
             android:text="@string/login"
             android:textSize="30sp"
-            android:minWidth="300dp"
             app:cornerRadius="10dp" />
+
         <Button
             android:id="@+id/registerButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:fontFamily="@font/shojumaru"
+            android:minWidth="300dp"
             android:paddingStart="48dp"
             android:paddingTop="10dp"
             android:paddingEnd="48dp"
             android:paddingBottom="10dp"
             android:text="@string/register"
             android:textSize="30sp"
-            android:minWidth="300dp"
             app:cornerRadius="10dp" />
     </LinearLayout>
 

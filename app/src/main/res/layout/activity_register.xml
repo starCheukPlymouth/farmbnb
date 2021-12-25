@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".LoginActivity">
 
     <LinearLayout
@@ -21,11 +21,11 @@
 
             <ImageButton
                 android:id="@+id/backButton"
-                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:background="@drawable/logo_background"
-                tools:ignore="MissingConstraints"
-                android:contentDescription="@null" />
+                android:contentDescription="@null"
+                tools:ignore="MissingConstraints" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -45,15 +45,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/shojumaru"
-                android:textSize="36sp"
-                android:text="@string/farmbnb"/>
+                android:text="@string/farmbnb"
+                android:textSize="36sp" />
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -61,16 +61,15 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minWidth="300dp"
-        android:layout_marginTop="24dp">
+        android:layout_marginTop="24dp"
+        android:minWidth="300dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/sign_up"
             android:fontFamily="@font/shojumaru"
-            android:textSize="36sp"
-            />
+            android:text="@string/sign_up"
+            android:textSize="36sp" />
 
     </LinearLayout>
 
@@ -78,51 +77,53 @@
         android:id="@+id/phoneNumberInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minWidth="300dp"
-        android:minHeight="48dp"
         android:layout_marginTop="24dp"
-        android:inputType="phone"
+        android:autofillHints="@string/phone_number"
         android:hint="@string/phone_number"
-        android:autofillHints="@string/phone_number" />
+        android:inputType="phone"
+        android:minWidth="300dp"
+        android:minHeight="48dp" />
+
     <EditText
         android:id="@+id/passwordInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minWidth="300dp"
-        android:minHeight="48dp"
         android:layout_marginTop="12dp"
-        android:inputType="numberPassword"
+        android:autofillHints="@string/phone_number"
         android:hint="@string/password"
-        android:autofillHints="@string/phone_number" />
+        android:inputType="numberPassword"
+        android:minWidth="300dp"
+        android:minHeight="48dp" />
+
     <EditText
         android:id="@+id/confirmInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minWidth="300dp"
-        android:minHeight="48dp"
         android:layout_marginTop="12dp"
-        android:inputType="numberPassword"
+        android:autofillHints="@string/phone_number"
         android:hint="@string/confirm_password"
-        android:autofillHints="@string/phone_number" />
+        android:inputType="numberPassword"
+        android:minWidth="300dp"
+        android:minHeight="48dp" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/loginButton"
+            android:id="@+id/registerButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
             android:fontFamily="@font/shojumaru"
+            android:minWidth="300dp"
             android:paddingStart="48dp"
             android:paddingTop="10dp"
             android:paddingEnd="48dp"
             android:paddingBottom="10dp"
             android:text="@string/register"
             android:textSize="30sp"
-            android:minWidth="300dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="20dp"
             app:cornerRadius="10dp" />
     </RelativeLayout>
 

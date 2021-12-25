@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Farmbnb">
         <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".RegisterActivity"
             android:parentActivityName=".MainActivity">
 

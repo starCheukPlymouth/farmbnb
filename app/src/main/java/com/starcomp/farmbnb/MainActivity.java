@@ -11,21 +11,16 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Activity self;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        self = this;
-
         Button loginButton = findViewById(R.id.loginButton);
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(self, LoginActivity.class);
-                goNextPage(intent);
+                goNextPage("Login");
             }
         });
 
@@ -33,13 +28,26 @@ public class MainActivity extends AppCompatActivity {
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(self, RegisterActivity.class);
-                goNextPage(intent);
+                goNextPage("Register");
             }
         });
     }
 
-    private void goNextPage(Intent intent) {
-        startActivity(intent);
+    private void goNextPage(String target) {
+        Intent intent;
+        switch (target) {
+            case "Login":
+                intent = new Intent(this, LoginActivity.class);
+                break;
+            case "Register":
+                intent = new Intent(this, RegisterActivity.class);
+                break;
+            default:
+                intent = null;
+                break;
+        }
+        if(intent != null) {
+            startActivity(intent);
+        }
     }
 }
