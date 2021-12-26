@@ -15,4 +15,5 @@
     <string name="book_now">Book Now</string>
     <string name="thank_you">Thank You!</string>
     <string name="home">Home</string>
+    <string name="login_success">Login Success</string>
 </resources>

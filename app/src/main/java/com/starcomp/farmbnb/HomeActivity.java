@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -41,6 +42,8 @@ public class HomeActivity extends AppCompatActivity {
                 selectProduct(HUT);
             }
         });
+
+        Toast.makeText(getApplicationContext(), getString(R.string.login_success), Toast.LENGTH_SHORT).show();
     }
 
     private void selectProduct(String name) {
