@@ -16,4 +16,6 @@
     <string name="thank_you">Thank You!</string>
     <string name="home">Home</string>
     <string name="login_success">Login Success</string>
+    <string name="channel_name">ChannelName</string>
+    <string name="channel_description">ChannelDiscription</string>
 </resources>
