@@ -13,19 +13,12 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <ImageButton
+            android:id="@+id/backButton"
             android:layout_width="60dp"
-            android:layout_height="60dp">
-
-            <ImageButton
-                android:id="@+id/backButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/back_button"
-                android:contentDescription="@null"
-                tools:ignore="MissingConstraints" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_height="60dp"
+            android:background="@drawable/back_button"
+            android:contentDescription="@null" />
 
     </LinearLayout>
 
