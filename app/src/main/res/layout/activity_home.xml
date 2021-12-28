@@ -9,10 +9,27 @@
     tools:context=".HomeActivity">
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/user"
+            android:contentDescription="@null" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/farmHouse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:orientation="vertical">
 
         <androidx.cardview.widget.CardView

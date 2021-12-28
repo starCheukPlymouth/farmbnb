@@ -2,9 +2,12 @@ package com.starcomp.farmbnb;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -19,6 +22,14 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        ImageButton profileButton = findViewById(R.id.profileButton);
+        profileButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goToProfilePage();
+            }
+        });
 
         LinearLayout farmHouse = findViewById(R.id.farmHouse);
         LinearLayout barn = findViewById(R.id.barn);
@@ -44,6 +55,11 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         Toast.makeText(getApplicationContext(), getString(R.string.login_success), Toast.LENGTH_SHORT).show();
+    }
+
+    private void goToProfilePage() {
+        Intent intent = new Intent(this, ProfileActivity.class);
+        startActivity(intent);
     }
 
     private void selectProduct(String name) {
