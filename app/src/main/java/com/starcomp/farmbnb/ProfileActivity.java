@@ -2,8 +2,10 @@ package com.starcomp.farmbnb;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -30,6 +32,14 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
+        Button recordButton = findViewById(R.id.recordButton);
+        recordButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goToRecordPage();
+            }
+        });
+
         TextView userName = findViewById(R.id.userName);
         TextView phoneNumber = findViewById(R.id.phoneNumber);
         TextView address = findViewById(R.id.address);
@@ -39,6 +49,11 @@ public class ProfileActivity extends AppCompatActivity {
         phoneNumber.setText(profile.getPhoneNumber());
         address.setText(profile.getAddress());
         userClass.setText(profile.getUserClass());
+    }
+
+    private void goToRecordPage() {
+        Intent intent = new Intent(this, RecordActivity.class);
+        startActivity(intent);
     }
 
     private void createMockProfile() {
